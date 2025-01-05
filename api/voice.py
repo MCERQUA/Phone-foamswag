@@ -47,6 +47,10 @@ def send_order_email(customer_data):
         print(f"Error sending email: {e}")
         return False
 
+@app.route("/")
+def index():
+    return "Echo Systems Phone Order System - Webhook Handler Running"
+
 @app.route("/voice", methods=['GET', 'POST'])
 def voice():
     response = VoiceResponse()

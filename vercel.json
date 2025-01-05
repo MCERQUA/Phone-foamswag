@@ -4,6 +4,7 @@
     { "src": "api/*.py", "use": "@vercel/python" }
   ],
   "routes": [
+    { "src": "/", "dest": "/api/voice.py" },
     { "src": "/voice", "dest": "/api/voice.py" },
     { "src": "/collect_name", "dest": "/api/voice.py" },
     { "src": "/collect_email", "dest": "/api/voice.py" },
